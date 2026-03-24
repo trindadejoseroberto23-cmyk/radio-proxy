@@ -9,8 +9,8 @@ app.get('/radio', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Proxy rodando');
+  res.send('Proxy rodando ✅');
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT);
+app.listen(PORT, () => console.log('Servidor rodando'));
